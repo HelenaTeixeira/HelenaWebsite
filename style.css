@@ -97,6 +97,7 @@
 }
 
 
+
 @media screen and (max-width: 960px) {
     
     .navbar__container {
@@ -270,7 +271,7 @@
     border-bottom: 4px solid #007991;;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
     .about__container{
         display: grid;
         grid-template-columns: 1fr; /*boxes 50/50 aligned*/
@@ -412,3 +413,156 @@
     }
 }
 
+
+/*Experience section*/
+.experience {
+    background: #000000;
+    background: linear-gradient(to right, #161616, #000000);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 10rem 0;
+}
+
+.experience h1{
+    background: #007991;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #78ffd6, #007991);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #78ffd6, #007991); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    margin-bottom: 5rem;
+    font-size: 3rem;
+}
+
+.experience__wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.experience__card{
+    margin: 10px;
+    height: 425px;
+    width: 300px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #007991;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #78ffd6, #007991);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #78ffd6, #007991); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */   
+    transition: 0.3 ease-in;
+
+}
+
+.experience__card h2{
+    text-align: center;
+    color: white;
+}
+
+.experience__btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.experience__card button{
+    color: white;
+    padding: 14px 24px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #000000;
+    font-size: 1rem;
+}
+
+.experience__card button:hover{
+    cursor: pointer;
+}
+
+.experience__card:hover{
+    transform: scale(1.075);
+    transition: 0.3s ease-in;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 700px){
+    .experience__wrapper{
+        grid-template-columns: 1fr ;
+    }
+}
+
+/*Find Me Section*/
+
+.findme {
+    background: #000000;
+    background: linear-gradient(to right, #161616, #000000);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 10rem 0;
+}
+
+.findme h1{
+    background: #007991;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #78ffd6, #007991);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #78ffd6, #007991); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    margin-bottom: 5rem;
+    font-size: 3rem;
+}
+
+.findme__wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.findme__card{
+    margin: 40px;
+    height: 300px;
+    width: 300px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #00F260;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #0575E6, #00F260);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #0575E6, #00F260); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    transition: 0.3 ease-in;
+
+}
+
+.findme__card h2{
+    text-align: center;
+    color: white;
+}
+
+.findme__btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.social__icon__link{
+    color: #fff;
+    font-size: 100px;
+}
+
+.findme__btn p{
+    color: white;
+    margin-top: 1rem;
+    font-size: 20px;
+}
