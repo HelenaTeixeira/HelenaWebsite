@@ -1,0 +1,94 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.projs {
+    background: #000000;
+    background: linear-gradient(to right, #161616, #000000);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 10rem 0;
+}
+
+.projs h1{
+    background: #007991;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #78ffd6, #007991);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #78ffd6, #007991); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    font-size: 5rem;
+}
+
+.card__wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.rainbow__card {
+    background-color: var(--background);
+    display: block;
+    width: 300px;
+    min-height: 90px;
+    border: 3px solid var(--primary);
+    padding: 15px;
+    margin: calc(50vh - 30px) auto 0 auto;
+    box-shadow: 10px -10px 0 -3px var(--background), 10px -10px var(--green),
+          20px -20px 0 -3px var(--background), 20px -20px var(--yellow), 
+          30px -30px 0 -3px var(--background), 30px -30px var(--orange), 
+          40px -40px 0 -3px var(--background), 40px -40px var(--red); 
+    transition: box-shadow 1s, top 1s, left 1s;
+    position: relative;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+  }
+
+  .rainbow__card:hover {
+    top: -40px;
+    left: 40px;
+    box-shadow: 0 0 0 -3px var(--background), 0 0 0 0 var(--green),
+        0 0 0 -3px var(--background), 0 0 0 0  var(--yellow),
+        0 0 0 -3px var(--background), 0 0 0 0  var(--orange),
+        0 0 0 -3px  var(--background), 0 0 0 0  var(--red);
+  }
+
+  .rainbow__card h2{
+    justify-content: center;
+    text-align: center;
+    background: #D3CCE3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    margin-bottom: 1rem;   
+  }
+  .rainbow__card p{
+    justify-content: center;
+    text-align: center;
+    color: white;
+  }
+
+  :root {
+    --primary: #555BFF;
+    --secondary: #22D2A0;
+    --background: rgb(8, 8, 8);
+    --green: #1FC11B;
+    --yellow: #FFD913;
+    --orange: #FF9C55;
+    --red: #FF5555;
+  } 
